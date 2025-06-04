@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fun Wala Quiz & Jokes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>PROGRAMMING</h1>
+    <p>QUIZ</p>
+  </header>
+
+  <div class="container">
+    <!-- Quiz Section -->
+    <div class="box" id="quizBox">
+      <h2>Quiz Time</h2>
+      <div class="question" id="questionText">Loading question...</div>
+      <div id="questionImage"></div>
+      <div id="answers"></div>
+      <button onclick="nextQuestion()">Next Question</button>
+    </div>
+
+    <!-- Result Section -->
+    <div class="box" id="resultBox" style="display:none;">
+      <h2>Your Result</h2>
+      <p id="resultText"></p>
+      <button onclick="restartQuiz()">Play Again</button>
+    </div>
+
+    <!-- Joke API Section -->
+    <div class="box">
+      <h2>Need a Laugh?</h2>
+      <button onclick="getJoke()">Get a Joke</button>
+      <div id="joke">Press the button to see a joke!</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
